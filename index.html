@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_package_v0.16/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_package_v0.16/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_package_v0.16/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon_package_v0.16/site.webmanifest">
+  <link rel="mask-icon" href="assets/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Dodecafonische klok</title>
+</head>
+
+<body>
+  <div class="clock">
+    <canvas class="canvas" width="1200" height="800"></canvas>
+    <div class="input">
+      <div class="input__create">
+        <button class="button button--sound" id="button"><img class="button__img" src="assets/sound_off.svg"
+            alt="sound button" width="75" height="75" />
+        </button>
+        <button class="button button--change" id="button">Random</button>
+
+        <div class="buttons buttons--create_scale"></div>
+      </div>
+
+      <div class='input__speed'>
+        <input class="slider" id="slider" type="range" min="100" max="10000" value="100"></input>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"
+    integrity="sha512-jduERlz7En1IUZR54bqzpNI64AbffZWR//KJgF71SJ8D8/liKFZ+s1RxmUmB+bhCnIfzebdZsULwOrbVB5f3nQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
